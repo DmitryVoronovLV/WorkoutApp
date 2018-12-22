@@ -7,5 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-
+  <h1>This is my first Ionic app</h1>
+  <p>It was written as a normal html</p>
+  <hr>
+  <h2>Is working now: {{isWorking | number}}</h2>
+  <button ion-button clear block (click)="startCounting()">Start</button>
+  <hr>
+  <h2>Steps Made : {{stepsMade | number}}</h2>
+  <button ion-button clear block (click)="getStepCount()">Show Steps</button>
+  <hr>
+  <p>By Dmitry Voronov</p>
 </ion-content>

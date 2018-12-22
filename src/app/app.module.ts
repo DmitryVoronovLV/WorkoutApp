@@ -11,6 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { Stepcounter } from '@ionic-native/stepcounter';
+import { DatePicker } from '@ionic-native/date-picker';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +37,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Stepcounter,
+    DatePicker
   ]
 })
 export class AppModule {}
